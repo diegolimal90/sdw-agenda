@@ -12,7 +12,7 @@ public class LocalDateTimeUtils {
      * @return the boolean
      */
     public static boolean isDateBeforeOfDateNow(LocalDateTime dateOne){
-        return isDateBeforeOfDateNow(dateOne, LocalDateTime.now());
+        return isDateBeforeOfBetween(dateOne, LocalDateTime.now());
     }
 
     /**
@@ -22,7 +22,7 @@ public class LocalDateTimeUtils {
      * @param dateTwo the date two
      * @return the boolean
      */
-    public static boolean isDateBeforeOfDateNow(LocalDateTime dateOne, LocalDateTime dateTwo){
+    public static boolean isDateBeforeOfBetween(LocalDateTime dateOne, LocalDateTime dateTwo){
         return dateOne.isBefore(dateTwo);
     }
 }

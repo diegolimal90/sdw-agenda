@@ -24,4 +24,5 @@ public class AgendaDocument {
     private LocalDateTime dtInicio;
     private LocalDateTime dtFim;
     private String tpAgenda;
+    private String dsRecorrencia;
 }

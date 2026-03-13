@@ -20,6 +20,8 @@ public class AgendaMapper {
                         .dtInicio(source.getDataInicio())
                         .dtFim(source.getDataFim())
                         .tpAgenda(source.getTipoAgenda())
+                        .dsRecorrencia(source.getRecorrencia())
+                        .dsAgenda(source.getDescricao())
                         .build())
                 .orElse(null);
     }
@@ -33,6 +35,7 @@ public class AgendaMapper {
                         .dataInicio(s.getDtInicio())
                         .dataFim(s.getDtFim())
                         .tipoAgenda(s.getTpAgenda())
+                        .recorrencia(s.getDsRecorrencia())
                         .build())
                 .orElse(null);
     }
